@@ -1,7 +1,5 @@
 require 'docking_station.rb'
 
-describe "docking station" do 
-  it "releases a bike" do 
-    expect (release).to eq true
-  end
+describe DockingStation do
+	it {is_expected.to respond_to(:release_bike)}
 end
